@@ -1,0 +1,28 @@
+.no-post{
+    margin: 7rem auto;
+    text-align: center;
+    width: 30%;
+}
+.no-post>h3{
+    font-weight: 700;
+    margin-bottom: 1rem ;
+}
+.no-post>p{
+        margin-bottom: 2rem ;
+        font-weight: 500;
+    font-size: var(--smaller-font-size);
+        
+}
+.no-post>.create{
+    background-color: hsl(190,64%,22%);
+    padding: .5rem;
+    color:#fff;
+    font-size: var(--smaller-font-size);
+}
+
+@media screen and (max-width:767px){
+    .no-post{
+    
+        width: 70%;
+    }
+}

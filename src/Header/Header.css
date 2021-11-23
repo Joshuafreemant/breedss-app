@@ -1,0 +1,236 @@
+.header{
+    width:100%;
+    position: fixed;
+    top: 0em;
+    left: 0;
+    z-index: 10000;
+    background-color: hsl(190,64%,22%);
+    padding-top: .5rem ;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid hsl(190,8%,60%);
+}
+
+.nav{
+    height: 4.5rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+   
+}
+
+.dropdownn{
+    color:hsl(190,64%,22%) !important;
+    
+}
+.nav__link{
+   color: #fff;
+   text-transform: capitalize;
+   font-size: .75rem;
+}
+.dropdownn__links{
+    color: #fff;
+    font-size: .75rem;
+    margin-top: .28rem !important;
+ }
+.logout{
+    color: #fff;
+   text-transform: capitalize;
+   font-size: .75rem;
+   background-color: transparent;  
+}
+.nav__link:hover{
+   color: #fff;
+}
+.nav__dark{
+   position: initial;
+
+}
+.nav__menu{
+   display: flex;
+   column-gap: 1rem;
+}
+.nav__list{
+   flex-direction: row;
+   column-gap: 4rem;
+   /* margin-top: 8.7rem */
+}
+.nav__toggle,.nav__tog,.nav__close{
+    display: none;
+}
+
+.nav__logo,.nav__toggle{
+color:#fff;
+}
+.nav__logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.nav__toggle{
+    font-size: 1.2rem;
+    cursor:pointer;
+}
+.nav__menu{
+    position: relative;
+
+}
+/* .nav__list{
+    display: flex;
+   justify-content: space-between;
+   margin-top: 9.3rem;
+   width: 100%;
+} */
+.signup__link,.login__link{
+  
+    padding: .4rem;
+    transition: border .4s ease-in;
+   
+}
+
+.signup__link:hover,.login__link:hover {
+    border-bottom: 6px dotted hsl(190,8%,60%);
+    width: 1px;
+  }
+
+
+@media screen and (max-width:767px){
+    .header{
+       
+        border-bottom: none;
+    }
+    .nav__menu{
+        position:fixed;
+        background-color:hsl(190,100%,99%);
+        top:0;
+        right:100%;
+        height:100%;
+        width:100%;
+        box-shadow:-1px 0 4px hsla(190,64%,15%,.15);
+        padding:3rem;
+        transition: .4s;
+       
+    }
+    .nav__list{
+        margin-top: 0;
+    }
+    .drop__close{
+        opacity: 1;
+        margin-bottom:0;
+    }
+    .drop__close>.nav__link{
+        color:     hsl(190,8%,60%);
+        font-size: 12px;
+        margin-top: 1.5rem;
+       
+    }
+    .dropdownn__links, .logout{
+        font-size: 1rem;
+        color:     hsl(190,8%,60%);
+
+    }
+ .dropdownn{
+        font-size: .8rem !important ;
+    }
+
+    .nav__logo{
+        position:fixed;
+      
+        font-size: 1.25rem;
+        right:1.5rem;
+        top: 1.9rem;
+       
+    }
+    .nav__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.5rem;
+    }
+.open__drop{
+    display: flex;
+    align-items: center;
+}
+.nav__drop{
+    border: none;
+    display: none;
+}
+  
+    .nav__link{
+        color:hsl(190,8%,60%);
+        font-weight: 500;
+        text-transform: capitalize;
+        font-size: 1rem;
+       display: flex;
+    }
+    
+    .nav__toggle{
+        position: absolute;
+        top: 1.7rem;
+        left: 1rem;
+        font-size: 2.2rem;
+        color: hsl(190,100%,99%);
+        cursor: pointer;
+        display: block;
+        background-color: transparent;
+        
+    }
+    .nav__toggle:focus{
+      
+        background-color: transparent;
+        
+    }
+    .nav__tog:focus{
+      
+        background-color: transparent;
+        
+    }
+    
+   
+
+    .nav__tog{
+        position:absolute;
+          top: 1.8rem;
+        left: 1.1rem;
+        font-size: 1.7rem;
+        color:#fff;
+        display: block;
+    }
+    .show-menu{
+        position:fixed;
+        background-color:hsl(190,64%,22%);
+        top:4.5rem;
+        left:0%;
+        height:100vh;
+        width:70%;
+        /* box-shadow:-1px 0 4px hsla(var(--hue-color),64%,15%,.15); */
+        padding:1.5rem;
+      z-index: 0;
+        transition: .4s ease-in-out;
+       
+       
+    }
+   
+    .signup__link, .login__link {
+      
+        padding: 0rem;
+       
+    }
+    .nav__link:hover{
+    
+       color: hsl(190,24%,35%);
+    }
+}
+
+
+.nav__link:hover{
+    
+    padding-bottom: .3rem;
+    transition: .4s;
+    border-bottom: none;
+    width: 1px;
+}
+

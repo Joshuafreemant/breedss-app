@@ -1,0 +1,20 @@
+.post__section-parent{
+    margin-top: -2rem;
+}
+.spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:7rem;
+}
+.spinner>img{
+    width: 150px;
+ }
+@media screen and (max-width:768px){
+    .post__section-parent{
+        margin-top: 10rem;
+    }
+    .spinner>img{
+       width: 70px;
+    }
+}

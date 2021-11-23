@@ -1,0 +1,104 @@
+
+.signup__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+width: 100%;
+box-shadow: 0px 0px 5px 1px #ddd;
+  height: calc(85vh - var(--header-height));
+  overflow: hidden;
+}
+.signup__container>.left__side{
+    height:600px;
+    width: 65%;
+    background: black;
+}
+.signup__container>.left__side>img{
+    height: 200%;
+  width:100%;
+    object-fit: cover;
+    object-position: 55%;
+    opacity: 0.6;
+    
+}
+.signup__container>.right__side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    grid-gap: 1rem;
+    width: 35%;
+    
+}
+
+
+.signup__container>.right__side>.signup__description{
+    margin-bottom: 1rem;
+    width: 60%;
+    font-size: var(--smaller-font-size);
+}
+.signup__form-container>form>.form-groups{
+    width:100%;
+    
+}
+.signup__form-container>form>.form-groups>.form-input{
+    width:80%;
+    border-bottom: 1px solid var(--first-color);
+    margin-bottom: 1rem;
+    background-color: transparent;
+    padding: 0.5rem;
+    font-size: var(--smaller-font-size);
+}
+.form-select{
+    width:80%;
+    border: 1px solid var(--first-color);
+    margin-bottom: 1rem;
+    background-color: transparent;
+    padding: 0.5rem;
+    font-size: var(--smaller-font-size);
+    outline: none;
+}
+.select__label{
+    font-size: var(--smaller-font-size);
+    text-align: left;
+    margin-bottom: 6rem;
+}
+
+
+.signup__form-container>form>.form-groups>.form-input::placeholder{
+    font-size: var(--smaller-font-size);
+}
+.right__side>.signup__title{
+    font-family: var(--title-font);
+    font-weight: 600;
+    width: 60%;
+    margin-bottom: 1.5rem;
+}
+@media screen and (max-width:768px){
+   
+    .signup__container{
+        flex-direction: column;
+        width: 87%;
+        margin-top: 7rem;
+        min-height: 450px;
+      
+    }
+    .signup__container>.left__side {
+        display: none;
+    }
+    .right__side>.signup__title {
+        width: 100%;
+    }
+    .signup__container>.right__side {
+        width: 100%;
+    }
+    .signup__container>.right__side>.signup__description {
+        width: 80%;
+    }
+    .signup__form-container>form>.form-groups>.form-input {
+        width: 100%;
+    }
+  }

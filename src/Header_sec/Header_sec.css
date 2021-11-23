@@ -1,0 +1,131 @@
+.post__nav {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+.post__nav-interest {
+  width: 70%;
+}
+.post__nav-interest-hide {
+  display: none;
+}
+.header__search > button {
+  background-color: transparent;
+  color: var(--title-color);
+  font-size: var(--h3-font-size);
+}
+.show__search {
+  width: 70%;
+}
+.show__search > form {
+  width: 100%;
+}
+.show__search {
+  display: block;
+}
+.hide__search {
+  display: none;
+}
+.show__search > form > input {
+  border: 1px solid #ddd;
+  width: 90%;
+  padding: 0.49rem;
+  border-radius: 4px;
+}
+.post__nav-interest > form {
+  display: flex;
+}
+.css-2b097c-container {
+  width: 91%;
+  border-radius: 20px;
+}
+
+.post__nav-interest > form > button,
+.show__search > form > button {
+  background-color: var(--title-color);
+  padding: 0.66rem;
+  color: var(--white-color);
+  font-size: var(--smaller-font-size);
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.post__nav-profile {
+  width: 40%;
+  margin: auto;
+  display: flex;
+align-items: center;
+  justify-content: space-between;
+}
+.post__nav-profile > .user__link,.header__search > .user__link {
+  color: var(--text-color);
+  font-size: var(--smaller-font-size);
+  font-weight: 600;
+}
+.dropdown__profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown__profile > span {
+  margin-right: 0.2rem;
+}
+.post__nav-header {
+  position: fixed;
+  border-bottom: 0.5px solid rgba(35, 66, 60, 0.1);
+
+  /* z-index: 10000; */
+  background-color: #fff;
+  padding: 1rem;
+  top: 5.5rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .post__nav-header {
+    left: 0;
+  }
+  .post__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .post__nav-interest {
+    width: 90%;
+  }
+
+  .css-2b097c-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .show__search {
+    width: 90%;
+  }
+  .show__search > form > input {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .post__nav-interest > form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post__nav-interest > form > button {
+    height: 40px;
+  }
+  .show__search > form > button {
+    height: 40px;
+    width: 100%;
+  }
+
+  .post__nav-profile {
+    width: 80%;
+    margin: auto;
+  }
+  .user__link{
+    font-weight: 500;
+  }
+}

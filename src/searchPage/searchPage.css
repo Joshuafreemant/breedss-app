@@ -1,0 +1,80 @@
+.search-container{
+    width: 35%;
+
+    margin: 0 auto;
+}
+.search__section{
+    margin-top: 4em;
+}
+.search-container>form>input{
+    background: transparent;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+.search-container>form>input::placeholder{
+    font-size: 14px;
+    
+}
+.search-content{
+    width: 35%;
+    margin:2em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1em;
+}
+.user-info-middle>h5{
+    margin-bottom: 0.5em;
+}
+.user-info-middle>h2{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.user-info-middle>p{
+    font-size: 10px;
+}
+.user-image-left{
+    width: 50px;
+}
+.user-image-left>img{
+    border-radius: 100%;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+.user-view-right{
+    background-color:hsl(190,64%,22%);
+    color: #fff;
+    padding: 0.5em;
+
+}
+.view_profile_link{
+    color: #fff;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .search__section{
+        margin-top: 10.5em;
+    }
+    .search-content{
+        display: flex;
+ width: 35%;
+        align-items: center;
+   
+     
+    }
+    .search-content,.search-container{
+        width: 90%;
+    
+    }
+    .search-container>form>input::placeholder{
+        font-size: 12px;
+      text-align: center;
+        
+    }
+}

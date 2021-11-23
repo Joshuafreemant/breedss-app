@@ -1,0 +1,91 @@
+.like_user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+
+   
+}
+.user_like{
+    display: flex;
+    align-items: center;
+
+}
+.scroll{
+    overflow-y:scroll;
+height: 600px;
+}
+.like_user>.user_like>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.like__box{
+    width: 70%;
+    margin: auto;
+    height: 750px;
+    box-shadow: 0px 0px 5px 1px #ddd;
+    padding: 1.5rem;
+    position: relative;
+}
+.like__box>h3{
+    padding: .6rem;
+    border-bottom: 1px solid #eee;
+    font-weight: 800;
+}
+.like_post{
+    padding: 2rem;
+    border-bottom: 1px solid #eee;
+  
+}
+.like_post>p{
+    font-size: var(--smaller-font-size);
+}
+.like_post>h4{
+    margin-bottom: .5rem;
+    font-weight: 800;
+}
+.view_like_input{
+position: absolute;
+bottom: 0;
+z-index: 1000000;
+width: 90%;
+
+border-top: 1px solid #eee;
+
+}
+.view_like_input>form>.form-input{
+    /* border-top: 1px solid #eee; */
+    padding: 1rem;
+    background-color: transparent;
+    width: 100%;
+ 
+
+}
+.view_like_input>form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+
+@media screen and (max-width:768px){
+    .like__box{
+        width: 100%;
+        margin: 8em auto;
+       
+    }
+    .like_user {
+        width: 100%;
+    }
+    .like_post{
+        padding: 1rem;
+    }
+    .like_post>h4{
+        font-size: var(--smaller-font-size);
+    }
+}
+
